@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html  ng-app="weatherApp">
+<head>
+	<meta charset="utf-8">
+	<title>Weather Application</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.5.7/angular-route.min.js"></script>
+<script src="https://code.angularjs.org/1.5.7/angular-resource.min.js"></script>
+
+<script src="app.js"></script>
+	<style>
+		#sendBtn{
+			margin-top: 8px;
+			float: right;
+		}
+		.centre{
+			margin-top: calc(100vh - 52);
+			}
+		.longBox{
+			height: 250px;
+			background-image: url('http://weknowyourdreams.com/images/cloud/cloud-02.jpg');
+			text-align: center;
+			font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<ul class="nav navbar-nav">
+			<li><a href="#/" title="Home">Home</a></li>
+		</ul>
+	</nav>
+<div ng-view>
+
+</div>
+</body>
+</html>

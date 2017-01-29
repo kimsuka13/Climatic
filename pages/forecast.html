@@ -1,0 +1,14 @@
+<h5>{{cityName}}</h5>
+<h4 >Forecast for <span style="text-transform: capitalize">{{weatherResult.city.name}}, {{weatherResult.city.country}}</span></h4>
+<div class="container">
+	<div class="row">
+	<div ng-repeat = "w in weatherResult.list">
+		<div ng-class="{'col-md-12':$first,'col-md-2': !$first}">
+			<div ng-class="{'thumbnail':true, 'longBox' : $first}">
+				<h4>{{convertToDate(w.dt)}}</h4>
+				<p>{{convertToF(w.temp.day)}}&#176;F</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
