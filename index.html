@@ -15,21 +15,41 @@
 			margin-top: 8px;
 			float: right;
 		}
-		.centre{
-			margin-top: calc(100vh - 52);
-			}
 		.longBox{
 			height: 250px;
 			background-image: url('http://weknowyourdreams.com/images/cloud/cloud-02.jpg');
 			text-align: center;
 			font-size: 50px;
 		}
+		body{
+			background-image: url('weather.jpg');
+			background-size: 100%;
+		}
+		nav ul li a{
+			color: white;
+			font-size: 32px;
+			text-decoration: none;
+		}
+		.centre{
+			position: fixed;
+            top: 50%;
+			left: 50%;
+  			transform: translate(-50%, -50%);
+  			transform: -webkit-translate(-50%, -50%);
+  			transform: -ms-translate(-50%, -50%);
+		}
+		.row{
+			position: relative;
+		}
+		label{
+
+		}
 	</style>
 </head>
 <body>
-	<nav class="navbar navbar-default">
+	<nav class="navbar">
 		<ul class="nav navbar-nav">
-			<li><a href="#/" title="Home">Home</a></li>
+			<li><a href="#/" title="Home">Climatic</a></li>
 		</ul>
 	</nav>
 <div ng-view>

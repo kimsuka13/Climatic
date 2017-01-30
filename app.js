@@ -14,12 +14,14 @@ myApp.config(function($routeProvider){
 myApp.service('nameService', function(){
 	this.name = "Santa Clara";
 });
-myApp.controller('homeController',['$scope','nameService',function($scope,nameService){
-	$scope.cityName="london";
+myApp.controller('homeController',['$scope','$location','nameService',function($scope,$location,nameService){
+	// $scope.cityName="london";
 	$scope.$watch('cityName', function(){
 	nameService.name = $scope.cityName;
 });
-	
+$scope.submit = function(){
+	$location.path = "/forecast";
+};	
 }]);
 
 myApp.controller('forecastController',['$scope','$resource','nameService', function($scope,$resource, nameService){

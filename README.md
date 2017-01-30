@@ -1,6 +1,1 @@
-# Climatic# Climatic
-# Climatic
-# Climatic
-# Climatic
-# Climatic
-# Climatic
+A simple weather app created as a SPA using AngularJS framework. 
